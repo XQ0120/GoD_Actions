@@ -6,7 +6,6 @@
 #脚本兼容: Node.js
 #cron 1 7,12,19 * * * jd_beauty.js
 
-
 name: 东瓜美容院
 
 on:
