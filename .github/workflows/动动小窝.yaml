@@ -38,7 +38,7 @@ jobs:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
                   SYNCURL: /The.Flash/The.Flash/s0mall_h0ome.js
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
-                  PUSH_KEY: ${{ secrets.PUSH_KEY }}
+                  PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
                   TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
                   TG_USER_ID: ${{ secrets.TG_USER_ID }}
                   EFORK: ${{ secrets.EFORK }}
