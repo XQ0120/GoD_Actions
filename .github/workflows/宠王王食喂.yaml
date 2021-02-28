@@ -33,6 +33,7 @@ jobs:
                   SYNCURL: /The.Flash/The.Flash/jOd_jo0y_fee0dP0ets.js
                   JOY_FEED_COUNT: ${{ secrets.JOY_FEED_COUNT }}
                   SCKEY: ${{ secrets.SCKEY }}
+                  PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
                   TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
