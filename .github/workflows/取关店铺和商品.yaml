@@ -33,6 +33,7 @@ jobs:
                   node Ponysitters_Club_Season.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  UN_SUBSCRIBES: ${{ secrets.UN_SUBSCRIBES }} 
                   SYNCURL: /The.Flash/The.Flash/un0subscribe0.js
                   PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
