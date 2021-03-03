@@ -24,8 +24,7 @@ jobs:
               run: |
                   node Ponysitters_Club_Season.js
               env:
-                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
-                  DREAMFACTORY_FORBID_ACCOUNT: ${{secrets.DREAMFACTORY_FORBID_ACCOUNT }} 
+                  JD_COOKIE: ${{ secrets.JD_COOKIE }} 
                   SYNCURL: /XJJC.js
                   PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
