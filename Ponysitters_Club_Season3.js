@@ -85,7 +85,9 @@ async function changeFiele(content, cookie) {
 
 async function executeOneByOne() {
     const content = await fs.readFileSync("./temp.js", "utf8");
-    for (var i = 0; i < 1; i++) {
+    for (var i = 0; i < 1
+         //CookieJDs.length
+         ; i++) {
         console.log(`正在执行第${i + 1}个任务`);
         changeFiele(content, CookieJDs[i]);
         $.UserName = decodeURIComponent(CookieJDs[i].match(/pt_pin=(.+?);/) && CookieJDs[i].match(/pt_pin=(.+?);/)[1])
