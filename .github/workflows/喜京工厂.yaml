@@ -26,6 +26,7 @@ jobs:
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }} 
                   SYNCURL: /XJJC.js
+                  DREAMFACTORY_FORBID_ACCOUNT: ${{ secrets.DREAMFACTORY_FORBID_ACCOUNT }}
                   PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
