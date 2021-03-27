@@ -89,7 +89,7 @@ async function executeOneByOne() {
    let jxnclen=CookieJDs.length;
    if (process.env.SYNCURL.indexOf('j0xn0c.js')>0)
     {
-    	jxnclen=1;jxnci=0;//判断惊喜农场脚本,自定义开始和结束的位置
+    	jxnclen=2;jxnci=0;//判断惊喜农场脚本,自定义开始和结束的位置
     	
     	
     }
