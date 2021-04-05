@@ -1,0 +1,33 @@
+name: 手机狂欢城
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "0 0-18/6 * * *"
+    watch:
+        types: [started]
+    repository_dispatch:
+        types: jd_carnivalcity
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        if: github.event.repository.owner.id == github.event.sender.id
+        steps:
+            - name: 拉取代码
+              uses: actions/checkout@v2
+            - name: Use Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: "12.x"
+            - name: 安装依赖包
+              run: |
+                  npm install
+            - name: "运行【手机狂欢城】"
+              run: |
+                  node onlyOneExecute.js
+              env:
+                  JD_COOKIE: ${{ github.event.client_payload.JD_COOKIE || secrets.JD_COOKIE }}
+                  PUSH_KEY: ${{ github.event.client_payload.PUSH_KEY || secrets.PUSH_KEY }}
+                  BARK_PUSH: ${{ github.event.client_payload.BARK_PUSH || secrets.BARK_PUSH }}
+                  SYNCURL: https://github.com/wuzhi01/MyActions/raw/main/jd_carnivalcity.js
